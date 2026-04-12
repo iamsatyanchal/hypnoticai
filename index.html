@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      window.tailwind = window.tailwind || {}
+      window.tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              page_bg: '#f7f7f8',
+              surface: '#ffffff',
+              surface_muted: '#fafafa',
+              text_primary: '#111111',
+              text_secondary: '#6b7280',
+              text_tertiary: '#9ca3af',
+              border_default: '#e5e7eb',
+              border_strong: '#d1d5db',
+              button_dark_hover: '#1a1a1a',
+            },
+          },
+        },
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs" type="module"></script>
+    <script type="module">
+      import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs'
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs'
+      window.pdfjsLib = pdfjsLib
+    </script>
+    <title>hypnoticai-study</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
