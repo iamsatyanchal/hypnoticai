@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-sans: 'Inter', 'SF Pro Text', 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --type-sm-size: 0.75rem;
+  --type-sm-line: 1.5;
+  --type-sm-track: 0;
+
+  --type-base-size: 0.875rem;
+  --type-base-line: 1.55;
+  --type-base-track: -0.003em;
+
+  --type-lg-size: 1rem;
+  --type-lg-line: 1.35;
+  --type-lg-track: -0.01em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  --text-primary: #37352f;
+  --text-secondary: #6f6d67;
+  --text-muted: #9a9892;
+  --text-inverse: #ffffff;
+
+  --bg-app: #ffffff;
+  --bg-main: #ffffff;
+  --bg-panel: #f7f7f5;
+  --bg-surface: #ffffff;
+  --bg-muted: #e9e9e7;
+  --bg-hover: #efefee;
+  --bg-user: #e9d5ff;
+  --bg-logo: #37352f;
+  --bg-chip: #eff6ff;
+
+  --border-subtle: #e9e9e7;
+  --border-medium: #d4d4d2;
+
+  --icon-muted: #9ca3af;
+  --icon-secondary: #6b7280;
+  --icon-accent: #2563eb;
+
+  --btn-primary: #111418;
+  --btn-primary-hover: #000000;
+  --btn-primary-disabled: #e9e9e7;
+
+  --danger-bg: #fef2f2;
+  --danger-border: #fee2e2;
+  --danger-text: #dc2626;
+}
+
+:root[data-theme='dark'] {
+  --text-primary: #e9e7e3;
+  --text-secondary: #b3afa8;
+  --text-muted: #8a8680;
+  --text-inverse: #111111;
+
+  --bg-app: #10110f;
+  --bg-main: #141512;
+  --bg-panel: #181916;
+  --bg-surface: #1c1d19;
+  --bg-muted: #2a2c27;
+  --bg-hover: #252722;
+  --bg-user: #2a2736;
+  --bg-logo: #f2f1ee;
+  --bg-chip: #1d2734;
+
+  --border-subtle: #2c2f2a;
+  --border-medium: #3a3d37;
+
+  --icon-muted: #9f9a93;
+  --icon-secondary: #b1aca5;
+  --icon-accent: #71a7ff;
+
+  --btn-primary: #f2f1ee;
+  --btn-primary-hover: #ffffff;
+  --btn-primary-disabled: #2c2f2a;
+
+  --danger-bg: #341a1d;
+  --danger-border: #5a272d;
+  --danger-text: #ff9ca6;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-ui {
+  font-family: var(--font-sans);
+}
+
+.t-sm {
+  font-size: var(--type-sm-size);
+  line-height: var(--type-sm-line);
+  letter-spacing: var(--type-sm-track);
+}
+
+.t-base {
+  font-size: var(--type-base-size);
+  line-height: var(--type-base-line);
+  letter-spacing: var(--type-base-track);
+}
+
+.t-lg {
+  font-size: var(--type-lg-size);
+  line-height: var(--type-lg-line);
+  letter-spacing: var(--type-lg-track);
+}
+
+.fw-regular {
+  font-weight: var(--weight-regular);
+}
+
+.fw-medium {
+  font-weight: var(--weight-medium);
+}
+
+.fw-semibold {
+  font-weight: var(--weight-semibold);
+}
+
+.c-text-primary {
+  color: var(--text-primary);
+}
+
+.c-text-secondary {
+  color: var(--text-secondary);
+}
+
+.c-text-muted {
+  color: var(--text-muted);
+}
+
+.c-text-inverse {
+  color: var(--text-inverse);
+}
+
+.bg-app {
+  background-color: var(--bg-app);
+}
+
+.bg-main {
+  background-color: var(--bg-main);
+}
+
+.bg-panel {
+  background-color: var(--bg-panel);
+}
+
+.bg-surface {
+  background-color: var(--bg-surface);
+}
+
+.bg-muted {
+  background-color: var(--bg-muted);
+}
+
+.bg-user {
+  background-color: var(--bg-user);
+}
+
+.bg-logo {
+  background-color: var(--bg-logo);
+}
+
+.bg-chip {
+  background-color: var(--bg-chip);
+}
+
+.hover-surface:hover {
+  background-color: var(--bg-hover);
+}
+
+.border-subtle {
+  border-color: var(--border-subtle);
+}
+
+.border-medium {
+  border-color: var(--border-medium);
+}
+
+.icon-muted {
+  color: var(--icon-muted);
+}
+
+.icon-secondary {
+  color: var(--icon-secondary);
+}
+
+.icon-accent {
+  color: var(--icon-accent);
+}
+
+.btn-primary {
+  background-color: var(--btn-primary);
+  color: var(--text-inverse);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+.btn-primary:disabled {
+  background-color: var(--btn-primary-disabled);
+  color: var(--text-muted);
+}
+
+.danger {
+  background-color: var(--danger-bg);
+  border-color: var(--danger-border);
+  color: var(--danger-text);
+}
+
+.input-ui::placeholder {
+  color: var(--text-muted);
+}
+
+
+.react-flow__edge-textbg {
+   fill: var(--bg-surface) !important;
+}
+
+.react-flow__controls{
+/* border-color: var(--border-subtle); */
+border-radius: 5px !important;
+box-shadow: none !important;
+}
+
+.react-flow__controls-button {
+  background-color: var(--bg-panel) !important;
+  color: var(--text-secondary);
+  border-radius: 5px !important;
+}
