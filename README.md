@@ -24,4 +24,4 @@ Make studying feel simple, fast and focused :) no clutter, just learning.
 
 ---
 
-> Start where you are. Use what you have.
+> Start where you are. Use what you have. Do what you can.
