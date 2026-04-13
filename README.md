@@ -11,7 +11,7 @@ A minimal and simple notebooklm inspired study tool built to simplify how you le
 
 ## 🧠 Concept
 
-NoteForge focuses on a clean, distraction-free experience — combining note-taking and AI-powered understanding in one place.
+NoteForge focuses on a clean, distraction free experience.. combining note taking and AI powered understanding in one place.
 
 ## ⚙️ Stack
 
@@ -20,7 +20,7 @@ NoteForge focuses on a clean, distraction-free experience — combining note-tak
 
 ## 🎯 Goal
 
-Make studying feel simple, fast, and focused — no clutter, just learning.
+Make studying feel simple, fast and focused :) no clutter, just learning.
 
 ---
 
