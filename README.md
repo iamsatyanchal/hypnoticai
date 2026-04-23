@@ -2,23 +2,23 @@
 
 A minimal and simple notebooklm inspired study tool built to simplify how you learn from your own content.
 
-## ✨ Features
+## Features
 
 * Upload documents (PDF, TXT, MD)
 * Write and organize manual notes
 * Ask questions based on your content
 * Get contextual answers with source snippets
 
-## 🧠 Concept
+## Concept
 
 NoteForge focuses on a clean, distraction free experience.. combining note taking and AI powered understanding in one place.
 
-## ⚙️ Stack
+## Stack
 
 * React + Tailwind CSS
 * Lightweight API integration (AI responses)
 
-## 🎯 Goal
+## Goal
 
 Make studying feel simple, fast and focused :) no clutter, just learning.
 
